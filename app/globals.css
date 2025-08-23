@@ -10,6 +10,12 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -24,10 +30,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+body {
+  background-color: #303141;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.temp-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.temp-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.temp-content p {
+  font-size: 1.1rem;
+  color: #888;
 }
 
 a {
